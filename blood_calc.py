@@ -4,7 +4,7 @@ def interface():
     print("9 - Quit: ")
     keep_running = true
     choice =input("Enter choice: ")
-    if choice = "9":
+    if choice == "9":
         return()
     
 
