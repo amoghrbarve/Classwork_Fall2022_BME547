@@ -39,4 +39,3 @@ def output_HDL_result(hdl_value, charac):
 if __name__ == "__main__":
     interface()
     input_HDL()
-
