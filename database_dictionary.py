@@ -1,9 +1,32 @@
+class Patient: # Convention to give capital letter at the beginning
+    def __init__(self): # Constructor function
+        self.fist_name = ""
+        self.last_name = ""
+        self.patient_id = ""
+        self.age = ""
+        self.tests = []
+    
+    def full_name(self):#Method
+
+
+
+
+
+
 def create_patient_entry(first_name, last_name, patient_id, patient_age):
     new_patient = {"First Name":first_name, "Last Name":last_name, "Id":patient_id, "Age":patient_id, "Tests":[]}
+    new_patient = Patient()
+    new_patient.first_name = first_name
+    new_patient.last_name = last_name
     return new_patient
     print("new_patient")
 
 def main():
+    x = Patient()
+    print(x)
+    exit()
+
+
     db = []
     db.append(create_patient_entry("Ann", "Ables", 1, 30))
     db.append(create_patient_entry("Bob", "Boyles", 2, 34))
@@ -25,6 +48,8 @@ def match_id(db,input_value):
             print(i["First"])
             return i
     return False
+
+def add_test_to_patient
 
 def test_info(patient, test_tuple): #Adding a tuple
     patient.append(test_tuple)
